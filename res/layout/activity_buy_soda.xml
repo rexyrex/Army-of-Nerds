@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BuySodaActivity"
+     >
+
+    <TextView
+        android:id="@+id/buySodaTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/buySodaTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/bsHowManySodaTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buySodaTitleID"
+        android:layout_marginTop="37dp"
+        android:text="@string/bsHowManySodaTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/bsETSodaInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bsHowManySodaTitleID"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/bsCostTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bsETSodaInput"
+        android:text="@string/bsCostTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/bsCostActualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bsCostTitleID"
+        android:layout_below="@+id/bsCostTitleID"
+        android:text="@string/bsCostActualStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/bsEstimatedNerdIncomeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bsCostActualID"
+        android:layout_marginTop="24dp"
+        android:text="@string/estimatedNerdIncomeTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/bsEstimatedNerdIncomeActualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bsEstimatedNerdIncomeID"
+        android:text="@string/bsEstimatedNerdIncomeValueStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/bsRadioGroupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsEstimatedNerdIncomeActualID"
+        android:layout_alignParentLeft="true" >
+
+      
+            
+
+            <RadioButton
+                android:id="@+id/bsRadioNerdsID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bsRadioNerdsStr" />
+
+            <RadioButton
+                android:id="@+id/bsRadioSuperNerdsID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bsSuperNerdsStr" />
+
+            <RadioButton
+                android:id="@+id/bsRadioAsiansID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bsRadioAsiansStr" />
+
+      
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bsBuySodaBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsEstimatedNerdIncomeActualID"
+        android:layout_alignParentRight="true"        
+        android:text="@string/bsBuySodaBtnTitleStr" />
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_main_medium"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlayMainActivity" >
+
+
+    <TextView
+        android:id="@+id/playerNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/playerNameDisplay"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/mainValueNerdsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerNameDisplay"
+        
+        android:text="@string/mainValueNerdsStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/mainValueSuperNerdsID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueNerdsID"
+        
+        android:text="@string/mainValueSuperNerdsStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/mainValueAsiansID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueSuperNerdsID"
+        
+        android:text="@string/mainValueAsiansStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+
+    <TextView
+        android:id="@+id/mainValueNerdLevelID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueAsiansID"
+        
+        android:text="@string/mainValueNerdLevelStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    
+    <TextView
+        android:id="@+id/mainValueExpID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueNerdLevelID"
+        
+        android:text="@string/mainValueExpStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/mainValueWeaponID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueExpID"
+        
+        android:text="@string/mainValueWeaponStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/mainValueLoiID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueWeaponID"
+        
+        android:text="@string/mainValueLoiStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ 	<TextView
+        android:id="@+id/mainValueMoneyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueLoiID"
+        
+        
+        android:text="@string/mainValueMoneyStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 	
+ 	<TextView
+        android:id="@+id/mainValueBrainPowerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainValueMoneyID"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        
+        
+        android:text="@string/mainValueBrainPowerStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+ 	
+ 	    <ScrollView android:layout_height="fill_parent"
+        		android:layout_width="fill_parent"
+        		android:layout_below="@+id/mainValueBrainPowerID">
+   <RelativeLayout android:layout_height="fill_parent"
+        		android:layout_width="fill_parent"
+        		>
+    <Button
+        android:id="@+id/btn_fight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="5dp"        
+        android:text="@string/fightButtonString"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_upgrade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fight"
+        android:layout_marginTop="5dp"
+        android:text="@string/upgradeButtonString"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_upgrade"
+        android:layout_marginTop="5dp"
+        android:text="@string/playMainSaveBtnStr"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save"
+        android:layout_marginTop="5dp"
+        android:text="@string/quitButtonString" />
+</RelativeLayout>
+   </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreditsActivity" 
+    android:background="@drawable/credits">
+
+    <TextView
+        android:id="@+id/madeBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/madeBy"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textSize="30sp"/>
+    
+    <TextView
+        android:id="@+id/testers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/madeBy"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Special Thanks to the following Testers:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/backFromCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/backFromCredit" />
+
+    <Button
+        android:id="@+id/sendEmailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backFromCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Send Developer Email" />
+
+    
+
+</RelativeLayout>

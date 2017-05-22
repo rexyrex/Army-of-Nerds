@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rexyrex.armyofnerds"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.rexyrex.armyofnerds.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.CreditsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName="com.rexyrex.armyofnerds.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.StoryActivity"
+            android:label="@string/title_activity_story"
+            android:parentActivityName="com.rexyrex.armyofnerds.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.PlayMainActivity"
+            android:label="@string/title_activity_play_main"
+            android:parentActivityName="com.rexyrex.armyofnerds.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.StoryActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:label="@string/title_activity_upgrade"
+            android:parentActivityName="com.rexyrex.armyofnerds.PlayMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.PlayMainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.RaidGymActivity"
+            android:label="@string/title_activity_raid_gym"
+            android:parentActivityName="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.UpgradeActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.RecruitNerdsActivity"
+            android:label="@string/title_activity_recruit_nerds"
+            android:parentActivityName="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.UpgradeActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.AskNicelyActivity"
+            android:label="@string/title_activity_ask_nicely"
+            android:parentActivityName="com.rexyrex.armyofnerds.RecruitNerdsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.RecruitNerdsActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.GoClubActivity"
+            android:label="@string/title_activity_go_club"
+            android:parentActivityName="com.rexyrex.armyofnerds.RecruitNerdsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.RecruitNerdsActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.BuySodaActivity"
+            android:label="@string/title_activity_buy_soda"
+            android:parentActivityName="com.rexyrex.armyofnerds.RecruitNerdsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.RecruitNerdsActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.RaidLibraryActivity"
+            android:label="@string/title_activity_raid_library"
+            android:parentActivityName="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.UpgradeActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.GambleActivity"
+            android:label="@string/title_activity_gamble"
+            android:parentActivityName="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.UpgradeActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.FightActivity"
+            android:label="@string/title_activity_fight"
+            android:parentActivityName="com.rexyrex.armyofnerds.PlayMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.PlayMainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.FightInfoActivity"
+            android:label="@string/title_activity_fight_info"
+            android:parentActivityName="com.rexyrex.armyofnerds.FightActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.FightActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.FightForRealActivity"
+            android:label="@string/title_activity_fight_for_real"
+            android:parentActivityName="com.rexyrex.armyofnerds.FightInfoActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.FightInfoActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.SellNerdsActivity"
+            android:label="@string/title_activity_sell_nerds"
+            android:parentActivityName="com.rexyrex.armyofnerds.UpgradeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.UpgradeActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.SaveActivity"
+            android:label="@string/title_activity_save"
+            android:parentActivityName="com.rexyrex.armyofnerds.PlayMainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.PlayMainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.LoadActivity"
+            android:label="@string/title_activity_load"
+            android:parentActivityName="com.rexyrex.armyofnerds.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.DeveloperModeActivity"
+            android:label="@string/title_activity_developer_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.rexyrex.armyofnerds.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rexyrex.armyofnerds.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.FinishActivity"
+            android:label="@string/title_activity_finish"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.DecryptActivity"
+            android:label="@string/title_activity_decrypt"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.LoiActivity"
+            android:label="@string/title_activity_loi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rexyrex.armyofnerds.ByeByeWorldActivity"
+            android:label="@string/title_activity_bye_bye_world" >
+        </activity>
+    </application>
+
+</manifest>

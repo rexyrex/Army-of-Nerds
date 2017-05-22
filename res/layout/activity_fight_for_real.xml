@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FightForRealActivity" 
+    android:background="@drawable/fight_actual_back4" >
+
+    <Chronometer
+        android:id="@+id/fChromometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/fChromometerStr" />
+
+    <Button
+        android:id="@+id/fRealDoneBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fTitleID"
+        android:layout_toLeftOf="@+id/fChromometer"        
+        android:text="@string/fDoneBtnStr" />
+    
+    <TextView
+        android:id="@+id/fTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="22sp"
+        android:text="@string/fTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/fDoneBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/fCheerStr" />
+    
+    <TextView
+        android:id="@+id/fBigStatusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fRealDoneBtnID"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fPlayerAndEnemyScoreStr"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/fBigCurrentStatusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fBigStatusID"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fPlayerVsEnemyCurrentScoreStr"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+            <TextView
+                android:id="@+id/fStatusPID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fBigCurrentStatusID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="@string/iniStr"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/fStatusVsID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fStatusPID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/iniStr"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/fStatusEID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fStatusVsID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/iniStr"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/fStatusStatsID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fStatusEID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/iniStr"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <ScrollView android:layout_width="wrap_content"
+                		android:layout_height="wrap_content" 
+                		android:layout_alignParentLeft="true"
+                		
+                		android:layout_above="@+id/fCheerID"               		
+                		>
+                
+                <TextView
+                    android:id="@+id/fCheerStatus1ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/fIniCheer"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+            </ScrollView>
+            
+            <ScrollView android:layout_width="wrap_content"
+                		android:layout_height="wrap_content" 
+                		android:layout_alignParentRight="true"
+                		
+                		android:layout_above="@+id/fCheerID" >
+                
+                 <TextView
+                     android:id="@+id/fCheerStatus2ID"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="2dp"
+                     android:text="@string/fIniCheer"
+                     android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+            </ScrollView>
+            
+
+    <Button
+        android:id="@+id/fCheerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/fCheerStr" />
+
+</RelativeLayout>

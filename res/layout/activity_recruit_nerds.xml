@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RecruitNerdsActivity" 
+    android:background="@drawable/recruit_nerds"
+    >
+
+    <TextView
+        android:id="@+id/recruitNerdTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/recruitNerdTitleStr" 
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/rnClubbingBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/recruitNerdTitleID"
+        android:text="@string/goClubStr" />
+
+    <Button
+        android:id="@+id/rnAskNicelyBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnClubbingBtnID"
+        android:layout_below="@+id/rnClubbingBtnID"
+        android:text="@string/askNicelyStr" />
+
+    <Button
+        android:id="@+id/rnBuySodaBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnAskNicelyBtnID"
+        android:layout_below="@+id/rnAskNicelyBtnID"
+        android:text="@string/buySodaStr" />
+
+    <Button
+        android:id="@+id/rcBackBtnID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rnBuySodaBtnID"
+        android:layout_below="@+id/rnBuySodaBtnID"
+        android:text="@string/backToUpgradeFromNerdsStr" />
+
+    <TextView
+        android:id="@+id/rnShowMoneyTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rcBackBtnID"
+        android:text="@string/rnShowMoneyTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/rnMoneyActualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rnShowMoneyTitleID"
+        android:text="@string/rnShowMoneyActualStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

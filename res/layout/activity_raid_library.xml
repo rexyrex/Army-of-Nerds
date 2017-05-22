@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RaidLibraryActivity"
+    android:background="@drawable/library" >
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/libraryListItemsStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lEstimatedCostTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lBuyTitleID"
+        android:layout_alignRight="@+id/backToUpgradeFromLibraryID"
+        android:layout_marginRight="36dp"
+        android:text="@string/estimatedCostTitleID"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lEstimatedCostActualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lEstimatedCostTitleID"
+        android:layout_below="@+id/lEstimatedCostTitleID"
+        android:text="@string/estimatedCostActualStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lBuyTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/test"
+        android:text="@string/lBuyTitleStr"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/lBuyItemEtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lBuyTitleID"
+        android:ems="5"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buyFromLibraryBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lBuyItemEtID"
+        android:text="@string/buyFromLibraryBtnStr" />
+
+    <Button
+        android:id="@+id/backToUpgradeFromLibraryID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buyFromLibraryBtnID"
+        android:layout_alignBottom="@+id/buyFromLibraryBtnID"
+        android:layout_alignParentRight="true"
+        android:text="@string/backFromLibraryToUpgradeBtnStr" />
+
+</RelativeLayout>

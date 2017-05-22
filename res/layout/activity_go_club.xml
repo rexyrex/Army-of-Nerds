@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GoClubActivity"
+    android:background="@drawable/club" 
+    android:id="@+id/zeeLayoutFohClub">
+
+    <TextView
+        android:id="@+id/buySodaTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/atTheClubTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/atcPickUpNerdsTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buySodaTitleID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:text="@string/atcPickUpNerdsTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/atcPickUpNerdsActualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atcPickUpNerdsTitleID"
+        android:layout_centerHorizontal="true"
+        android:text="@string/atcPickUpNerdsActualStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/atcOKBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atcPickUpNerdsActualID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:text="@string/atcOkBtnStr" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoadActivity"
+    android:background="@drawable/load" >
+
+    <TextView
+        android:id="@+id/loadTitleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loadTitleStr"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/ldLoadSlotsGroupID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadTitleID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" >
+
+        <RadioButton
+            android:id="@+id/ldSlot1ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/ldSlot1Str" />
+
+        <RadioButton
+            android:id="@+id/ldSlot2ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ldSlot2Str" />
+
+        <RadioButton
+            android:id="@+id/ldSlot3ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ldSlot3Str" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ldLoadBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldLoadSlotsGroupID"
+        android:layout_centerHorizontal="true"
+        android:text="@string/loadTitleStr" />
+
+    <Button
+        android:id="@+id/ldBackBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldLoadBtnID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/ldBackBtnStr" />
+
+</RelativeLayout>
